@@ -174,8 +174,8 @@ def loops_5():
     a_list = []
     for i in range(10):
         b_list = []
-        for j in range(10):
-            b_list.append("i"+str(i)+"j"+str(j))
+        for j in range(5):
+            b_list.append("(i"+str(i)+", j"+str(j)+")")
         a_list.append(b_list)
     return a_list
 
