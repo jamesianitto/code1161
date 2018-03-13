@@ -200,7 +200,15 @@ def loops_6():
     You can use a variable.
     TIP: look out for the starting condition.
     """
-    pass
+    a_list = []
+    for i in range(10):
+        b_list=[]
+        for j in range(i+1):
+            b_list.append(str(j))
+        a_list.append(b_list)
+    return a_list
+
+
 
 
 def loops_7():
@@ -224,10 +232,17 @@ def loops_7():
     This is a hard problem. Use lots of experimentation and draw
     lots of diagrams!
     """
-    j=4
-    for i in range(1,10,2):
-        print (" "*j+i*"*")
-        j=j-1
+    a_list = []
+    for i in range(5):
+        b_list = []
+        for j in range (9):
+            if j >= 4 - i and j <= 4 + i:
+                b_list.append("*")
+            else:
+                b_list.append(" ")
+        a_list.append(b_list)
+    return a_list
+
 
 
 
