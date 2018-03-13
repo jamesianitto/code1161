@@ -11,11 +11,14 @@ import platform
 # I think this will print "hello! Let's get started" by calling the print function.
 print("hello! Let's get started")  # it printed "hello! Let's get started"
 
-some_words = ['what', 'does', 'this', 'line', 'do', '?']
+# I think this will create a list
+some_words = ['what', 'does', 'this', 'line', 'do', '?']  #it created a list  
 
+# I think this will fail to print the string because word is not within quotations
 for word in some_words:
-    print(word)
+    print(word) #it failed to print "word"
 
+# I think this will fail to print "x" as it is not in quotations and is therefore not recognised as a string
 for x in some_words:
     print(x)
 
