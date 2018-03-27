@@ -29,7 +29,9 @@ def two_step_ranger(start, stop):
     Sometimes you want to hide complexity.
     Make a range function that always has a step size of 2
     """
-    pass
+    a_list = []
+    
+
 
 
 def stubborn_asker(low, high):
@@ -38,7 +40,19 @@ def stubborn_asker(low, high):
     Ask for a number, and if the response is outside the bounds keep asking
     until you get a number that you think is OK
     """
-    pass
+    keep_asking = True
+    while keep_asking == True:
+        i = None
+        j = input("give a number between " + str(low) + " and " + str(high) +":")
+        try:
+            i = float(j)
+            if i >= low and i <= high:
+                keep_asking = False
+            else:
+                keep_asking = True
+        except:
+            keep_asking = True
+    return "correct"
 
 
 def not_number_rejector(message):
@@ -57,7 +71,19 @@ def super_asker(low, high):
     Combine stubborn_asker and not_number_rejector to make a function
     that does it all!
     """
-    pass
+    keep_asking = True
+    while keep_asking == True:
+        i = None
+        j = input("give a number between " + str(low) + " and " + str(high) +":")
+        try:
+            i = float(j)
+            if i >= low and i <= high:
+                keep_asking = False
+            else:
+                keep_asking = True
+        except:
+            keep_asking = True
+    return (str(j) + " is a good number!")
 
 
 if __name__ == "__main__":

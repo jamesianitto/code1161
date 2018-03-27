@@ -28,7 +28,31 @@ def advancedGuessingGame():
     Remember to think modular. Try to keep your functions small and single
     purpose if you can!
     """
-    return "You got it!"
+    print("\nwelcome to the guessing game!")
+    print("A number between _ and _?")
+    lowerBound = input("Enter a lower bound: ")
+    lowerBound = int(lowerBound)
+    upperBound = input("Enter an upper bound: ")
+    print("OK the, a number between " + str(lowerBound) + " and {} ?".format(upperBound))
+    upperBound = int(upperBound)
+
+    actualNumber = random.randint(lowerBound, upperBound)
+
+    guessed = False
+    while not guessed:
+      try:
+        guessedNumber = (input("guess a number: "))
+        print("gussed {},".format(guessedNumber),) #comma?
+        if gussedNumber == actualNumber:
+          print("You got it!! It was {}".format(actualNumber))
+          guessed = True
+        elif guessedNumber < lowerBound or guessedNumber > upperBound:
+          print("You're guessing out of bounds!")
+        elif guessedNumber < actualNumber:
+          print("Too low!")
+        else:
+          print("Too high!")
+      return "You got it!"
 
 
 if __name__ == "__main__":
