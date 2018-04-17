@@ -138,12 +138,12 @@ def random_filler_text(number_of_words=200):
         see line 77 of week4/hangman_leadboard.py for an example.
     """
     import random
-    url = "http://api.wordnik.com/v4/words.json/randomWords?api_key=a2a73e7b926c924fad7001ca3111acd55af2ffabf50eb4ae5&minLength=3&maxLength=10&limit=1"
-    r = requests.get(url)
-    response_json = json.loads(r.text)
-    return response_json[0]['word']
-    wordIndex = random.randint(0, len(wordList) - 1)
-    return wordList[wordIndex]
+    # url = "http://api.wordnik.com/v4/words.json/randomWords?api_key=a2a73e7b926c924fad7001ca3111acd55af2ffabf50eb4ae5&minLength=3&maxLength=10&limit=1"
+    # r = requests.get(url)
+    # response_json = json.loads(r.text)
+    # return response_json[0]['word']
+    # wordIndex = random.randint(0, len(wordList) - 1)
+    # return wordList[wordIndex]
 
 
 def fast_filler(number_of_words=200):
